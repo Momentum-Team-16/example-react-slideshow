@@ -29,7 +29,11 @@ const Slideshow = ({ data }) => {
         <h2 data-testid="title">{data[currentSlide].title}</h2>
         <div className="card horizontal">
           <div className="card-image">
-            <img src={data[currentSlide].image} className="responsive-img" />
+            <img
+              src={data[currentSlide].image}
+              className="responsive-img"
+              alt={data[currentSlide].title}
+            />
           </div>
           <div className="card-stacked">
             <div className="card-content">
